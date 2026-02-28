@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>калькулятор</title>
+</head>
+<body>
+{% if op == '+' %}
+    {{ n1 + n2 }}
+{% elif op == '-' %}
+    {{ n1 - n2 }}
+{% elif op == '*' %}
+    {{ n1 * n2 }}
+{% elif op == '**' %}
+    {{ n1 ** n2 }}
+{% elif op == ':' %}
+    {% if n2 == 0 %}
+        Ошибка
+    {% else %}
+        {{ n1 / n2 }}
+    {% endif %}
+{% else %}
+    Ошибка
+{% endif %}
+</body>
+</html>

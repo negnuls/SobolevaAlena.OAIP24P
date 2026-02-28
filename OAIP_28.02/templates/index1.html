@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №1</title>
+</head>
+<body>
+{% if (a >= b and a <= c) or (a >= c and a <= b) %}
+    {{ a }}
+{% elif (b >= a and b <= c) or (b >= c and b <= a) %}
+    {{ b }}
+{% else %}
+    {{ c }}
+{% endif %}
+</body>
+</html>
